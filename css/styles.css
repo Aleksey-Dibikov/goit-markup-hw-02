@@ -1,4 +1,5 @@
 :root {
+  --color-logo: #000000;
   --main-text-color: #757575;
   --title-color: #212121;
   --title-second-color: #ffffff;
@@ -41,21 +42,12 @@ fooer
 
 .link {
   text-decoration: none;
-  color: var(--title-color);
+  color: var(--main-text-color);
 }
 
 .link:hover,
 .link:focus {
   color: var(--hover-color);
-}
-
-.curent {
-  color: var(--hover-color);
-}
-
-.curent:hover,
-.curent:focus {
-  color: var(--title-color);
 }
 
 .button:hover,
@@ -67,7 +59,7 @@ fooer
   list-style: none;
 }
 
-.heder {
+.header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -80,8 +72,31 @@ fooer
 
 .nav-logo {
   font-family: Raleway;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  color: var(--color-logo);
+}
+
+.dark-bg .nav-logo {
+  --color-logo: var(--title-second-color)
+}
+
+.nav-website {
+  color: var(--title-color);
+}
+
+.contacts {
+  color: var(--main-text-color);
+}
+
+.curent {
+  color: var(--hover-color);
+}
+
+.curent:hover,
+.curent:focus {
+  color: var(--title-color);
 }
 
 .dark-bg {
@@ -99,6 +114,7 @@ fooer
 }
 
 .button {
+  font-family: inherit;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -134,7 +150,6 @@ fooer
 
 .list-card {
   width: 270px;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
@@ -149,10 +164,6 @@ fooer
   font-size: 16px;
   line-height: 1.88;
   color: var(--title-color);
-}
-
-.studio {
-  color: var(--title-second-color);
 }
 
 .studio:hover,
@@ -176,6 +187,8 @@ fooer
 
 /* portfolio */
 .body-portfolio {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -184,6 +197,7 @@ fooer
 }
 
 .list-button {
+  font-family: inherit;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
